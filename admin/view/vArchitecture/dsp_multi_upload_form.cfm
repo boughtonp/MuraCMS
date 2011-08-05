@@ -133,7 +133,7 @@ jQuery(document).ready(function(){
 				jQuery('<li><img src="#application.configBean.getContext()#/admin/images/progress_bar.gif"></li>').appendTo('##uploader .files');	
 			} else {
 			// extension is not allowed
-				alertDialog('Error: only images are allowed');
+				alertDialog('Error: only jpg, png, or gif images are allowed');
 				// cancel upload
 				return false;
 			}
