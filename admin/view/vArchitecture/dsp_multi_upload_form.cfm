@@ -129,7 +129,7 @@ jQuery(document).ready(function(){
 			},
 			onSubmit : function(file , ext){
 			                // Allow only images. You should add security check on the server-side.
-			if (ext && /^(jpg|png|jpeg|gif)$/.test(ext)){
+			if (ext && /^(jpg|png|jpeg|gif)$/i.test(ext)){
 				jQuery('<li><img src="#application.configBean.getContext()#/admin/images/progress_bar.gif"></li>').appendTo('##uploader .files');	
 			} else {
 			// extension is not allowed
